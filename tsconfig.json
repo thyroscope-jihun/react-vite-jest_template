@@ -14,8 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "baseUrl": ".",
+    "paths": {}
   },
-  "include": ["src"],
+  "include": ["src", "svgTransform.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
